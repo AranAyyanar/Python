@@ -18,10 +18,10 @@ class Strings{
       String rev="";
       int k=list2[i].length()/2;
       if (k>=2){
-         for(int j=k;k>=0;k--){
+         for(int j=k-1;j>=0;j--){
             rev=rev+list2[i].charAt(j);
          }
-         for(int j=k;k<list2[i].length();k++){
+         for(int j=k;j<(list2[i].length());j++){
             rev=rev+list2[i].charAt(j);
          }
          listr[i]=rev;
@@ -30,6 +30,6 @@ class Strings{
          listr[i]=list2[i];
       }
   }
-  System.out.println(listr[list4[0]]+" "+listr[list4[1]]);
+  System.out.println(listr[list4[0]+1]+" "+listr[list4[1]+1]);
   }
 }
